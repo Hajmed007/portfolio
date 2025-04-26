@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hajmed | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-light py-3 shadow-sm sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="fs-4 fw-bold">Portfolio</div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="hero" class="text-center bg-light py-5">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div data-aos="zoom-in" class="mb-4 mb-md-0">
+      <img src="hajmed.jpeg" alt="Your Name" class="rounded-circle img-fluid" style="max-width: 250px;" />
+    </div>
+    <div data-aos="fade-left">
+      <h1 class="display-5 fw-bold">Hi, I'm <span class="text-primary">Mohamed Hajmed Ali</span></h1>
+      <p class="lead">Java Developer & CyberSecurity Analyst</p>
+      <a href="#projects" class="btn btn-primary mt-3">See My Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5 bg-white" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <p>
+      I'm a passionate developer with expertise in <strong>Java programming</strong> and a strong foundation in <strong>Cybersecurity principles</strong>.
+      I enjoy solving real-world problems through clean, efficient code and ensuring systems are secure and resilient.
+      My approach blends development and security to build trustworthy digital experiences.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4" data-aos="fade-up">Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-2 mb-3" data-aos="zoom-in">Java</div>
+      <div class="col-6 col-md-2 mb-3" data-aos="zoom-in" data-aos-delay="100">Linux</div>
+      <div class="col-6 col-md-2 mb-3" data-aos="zoom-in" data-aos-delay="200">HTML5</div>
+      <div class="col-6 col-md-2 mb-3" data-aos="zoom-in" data-aos-delay="300">CSS3</div>
+      <div class="col-6 col-md-2 mb-3" data-aos="zoom-in" data-aos-delay="400">Pentester</div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Student Management System (Java)</h5>
+            <p class="card-text">A desktop app built with Java to manage student data with file handling and OOP principles.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="150">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Secure Login System</h5>
+            <p class="card-text">Implemented a login module using password hashing (SHA-256) and secure form handling.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Modern Portfolio Website</h5>
+            <p class="card-text">Responsive and stylish personal portfolio website using only HTML and CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Contact</h2>
+    <form class="mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark text-white text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Hajmed — Built with ❤️ using HTML, CSS & Bootstrap</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
