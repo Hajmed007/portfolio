@@ -1,0 +1,227 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  /* Container Class for Layout */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  header .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    display: inline-block;
+  }
+  header nav ul {
+    list-style-type: none;
+    float: right;
+  }
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  header nav ul li a:hover {
+    color: #f0a500;
+  }
+  
+  /* Hero Section */
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    position: relative;
+    text-align: center;
+  }
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+/* Hero Section Image - Slightly Bigger Circle */
+.hero-image img {
+    width: 250px;            /* Slightly bigger size (250px) */
+    height: 250px;           /* Same height as width to maintain the circle shape */
+    border-radius: 50%;      /* Make the image circular */
+    object-fit: cover;       /* Ensures the image fills the circle properly */
+    transition: transform 0.5s ease; /* Optional: transition effect */
+  }
+  
+  
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  /* Hero Section Name */
+.hero-content h1 {
+    font-size: 3em;            /* Adjust font size as needed */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;       /* Prevents the name from wrapping to the next line */
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  /* Fade-in Animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Zoom-in Animation */
+  .zoom-in {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: zoomIn 1s forwards;
+  }
+  
+  @keyframes zoomIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Slide-in Animation */
+  .slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+  }
+  .skill {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Project Cards */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+  }
+  .project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  .project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .project-info p {
+    color: #777;
+    font-size: 1em;
+  }
+  
+  /* Contact Form */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contact-form button:hover {
+    background-color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
